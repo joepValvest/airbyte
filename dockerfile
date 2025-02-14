@@ -1,5 +1,3 @@
-FROM airbyte/server:latest
-
+FROM airbyte/airbyte:latest
 EXPOSE 8000
-
-CMD ["bash", "-c", "/app/run-airbyte.sh"]
+CMD ["airbyte-server"]
